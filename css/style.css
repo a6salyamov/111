@@ -501,7 +501,251 @@ body {
   transition: .5s ease;
 }
 
-.brands__link:hover svg{
+.brands__link:hover svg {
   fill: #661CE7;
   transform: scale(1.25);
+}
+
+/* -------------------------------------------- */
+.blog__inner {
+  margin-top: 130px;
+  margin-bottom: 136px;
+}
+
+.blog__title {
+  font-weight: 800;
+  font-size: 58px;
+  line-height: 76px;
+  margin-bottom: 47px;
+  /* margin-top: 130px; */
+}
+
+.blog__inner-top {
+  margin-bottom: 46px;
+  display: flex;
+}
+
+.blog__inner-top-item {
+  margin-right: 30px;
+}
+
+.blog__inner-top-btn {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  background-color: transparent;
+}
+
+.blog__inner-top-btn--active {
+  color: #FF6433;
+}
+
+.blog__inner-top-item:last-child {
+  margin-right: 0;
+}
+
+.blog__list {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr 1fr;
+  gap: 64px 32px;
+}
+
+.blog__list-link {
+  display: block;
+  transition: all .5s ease-in-out;
+  overflow: hidden;
+}
+
+.blog__list-link:hover {
+  transform: scale(1.10) translateX(-10px);
+  box-shadow: 10px 10px 5px rgba(30, 27, 27, 0.3);
+}
+
+.blog__list-img {
+  width: 100%;
+  height: 100%;
+}
+
+.blog__list-imgbox {
+  margin-bottom: 16px;
+}
+
+.blog__list-imgbox-text {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  color: #939191;
+  margin-top: 24px;
+}
+
+.blog__list-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  margin-bottom: 16px;
+}
+
+/* ------------------------------------------------------------------------------------- */
+
+
+
+.customers {
+  background: #F2F2F2;
+}
+
+.container--slider {
+  max-width: 1370px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.customers__inner {
+  padding-top: 130px;
+  padding-bottom: 205px;
+}
+
+.customers__title {
+  font-weight: 800;
+  font-size: 58px;
+  line-height: 76px;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-bottom: 76px;
+}
+
+.customers__slider {}
+
+
+
+.customers__slider-item {
+  background-color: #fff;
+  padding: 72px;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.03em;
+  border-radius: 6px;
+  margin: 0 20px;
+  max-height: 376px;
+}
+
+
+
+.customers__slider-heading {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.customers__slider-img {
+  display: block;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.customers__slider-title span {
+  display: block;
+  color: #939191;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+
+/* .---------------------------------------------------------СЛАЙДЕР-------------------------------------------------------------- . */
+
+.slick-track {
+  display: flex;
+
+
+}
+
+
+.slick-list {
+  overflow: hidden;
+}
+
+
+.customers__slider {
+  position: relative;
+
+}
+
+.customers__slider .slick-arrow {
+  position: absolute;
+  top: 395px;
+  left: 1260px;
+  z-index: 10;
+  font-size: 0;
+}
+
+
+.customers__slider .slick-arrow.slick-prev {
+  background: url('../images/slider-arrow-left.svg') center/ 100% no-repeat;
+  height: 48px;
+  width: 48px;
+  border: none;
+  border-radius: 50%;
+  transition: all .5s ease;
+  left: 1195px;
+}
+
+.customers__slider .slick-arrow.slick-prev:hover {
+  background: url('../images/slider-arrow-left-big.svg') center/ 100% no-repeat;
+  height: 48px;
+  width: 48px;
+  border: none;
+  border-radius: 50%;
+  transform: scale(1.3);
+}
+
+
+
+
+
+.customers__slider .slick-arrow.slick-next {
+  background: url('../images/slider-arrow-right.svg') center / 100% no-repeat;
+  height: 50px;
+  width: 50px;
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+  transition: all .5s ease;
+}
+
+.customers__slider .slick-arrow.slick-next:hover {
+  background: url('../images/slider-arrow-right-big.svg') center/ 100% no-repeat;
+  height: 48px;
+  width: 48px;
+  border: none;
+  border-radius: 50%;
+  transform: scale(1.3);
+}
+
+.customers__slider .slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 22px;
+}
+
+.customers__slider .slick-dots li {
+  list-style: none;
+  margin-right: 15px;
+}
+
+.customers__slider .slick-dots li:last-child{
+  margin-right: 0;
+}
+
+.customers__slider .slick-dots button {
+  font-size: 0;
+  width: 32px;
+  height: 4px;
+  align-items: center;
+  background-color: grey;
+
+}
+
+.customers__slider .slick-dots li.slick-active button {
+  background-color: #FF6433;
 }
